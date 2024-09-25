@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Botón para solicitar permiso de cámara -->
+        <Button
+            android:id="@+id/buttonCamera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Solicitar permiso de Cámara" />
+        <!-- TextView para mostrar el estado del permiso de cámara -->
+        <TextView
+            android:id="@+id/textViewCameraStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Estado de cámara: No solicitado"
+            android:layout_marginTop="8dp"/>
+
+        <!-- Botón para solicitar permiso de ubicación -->
+        <Button
+            android:id="@+id/buttonLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Solicitar permiso de Ubicación"
+            android:layout_marginTop="16dp" />
+        <!-- TextView para mostrar el estado del permiso de ubicación -->
+        <TextView
+            android:id="@+id/textViewLocationStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Estado de ubicación: No solicitado"
+            android:layout_marginTop="8dp"/>
+
+        <!-- Botón para solicitar permiso de almacenamiento -->
+        <Button
+            android:id="@+id/buttonStorage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Solicitar permiso de Almacenamiento"
+            android:layout_marginTop="16dp" />
+        <!-- TextView para mostrar el estado del permiso de almacenamiento -->
+        <TextView
+            android:id="@+id/textViewStorageStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Estado de almacenamiento: No solicitado"
+            android:layout_marginTop="8dp"/>
+
+        <Button
+            android:id="@+id/buttonOpenCamera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Abrir Cámara"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center"
+            />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:contentDescription="Imagen capturada"
+            android:layout_gravity="center"/>
+
+        <!-- Botón para mostrar la ubicación actual -->
+        <Button
+            android:id="@+id/buttonShowLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mostrar Ubicación"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center"/> <!-- Lo hacemos invisible inicialmente -->
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
